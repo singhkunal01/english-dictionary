@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dictionary.css" />
+    <!-- <link rel="stylesheet" href="dictionary.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="dictionary.png" type="image/png">
+    <title>Your Dictionary - Kunal Singh</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="index.html"><h1 id="heading-of-container">Your Dictionary {&lt;/&gt;} </h1></a>
+      </div>
+    </nav>
+    <section class="input container">
+      <h2>Find Meaning of Any <span style="color: #512d41;">Word</span>!!</h2>
+      <div class="form-wrap">
+        <div class="input-wrap">
+          <input
+            type="search"
+            name=""
+            id="inputSearch"
+            placeholder="Type a word..."
+          />
+          <button id="search">Search</button>
+        </div>
+      </div>
+    </section>
+    <section class="output">
+      <!-- when the data is fetched from the server -->
+      <div class="spinnerLoading">
+          <span class="loading">
+              <span class="loading-bubble loading-bubble-1"></span>
+              <span class="loading-bubble loading-bubble-2"></span>
+              <span class="loading-bubble loading-bubble-3"></span>
+          </span>
+          Loading...
+      </div>
+      <!-- your results appear here -->
+      <p class="outputPara" id="outputPara"></p>
+      <!-- pronounciation appears here -->
+      <div id="audio"><h5>Listen</h5></div>
+      <!-- when someone enters meaningless word this helps to give some suggestions -->
+      <div class="no-result"></div>
+    </section>
+    <br>
+    <h4 class="copyright">&copy; Designed By:@singhkunal01</h4>
+    <script src="dictionary.js"></script>
+  </body>
+</html>
+
+
+
