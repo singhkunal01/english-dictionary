@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   body {
-    font-family: "Lato", "Poppins", Arial, Helvetica, sans-serif;
+    font-family: "Lato", "Roboto Condensed", Arial, Helvetica, sans-serif;
     background:rgb(240, 240, 240); 
     min-height: 100vh;
   }
@@ -56,7 +56,7 @@
     outline: none;
     background-color: rgb(240, 240, 240);
     box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   }
   input::placeholder {
     color: #512d41;
@@ -70,7 +70,7 @@
     outline: none;
     border: none;
     cursor: pointer;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     transition: .4s;
   }
   
@@ -135,7 +135,7 @@
   }
   .outputPara {
     font-size: 20px;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     line-height: 1.6;
     font-weight: 500;
     text-transform: capitalize;
@@ -145,7 +145,7 @@
     
 }
 .copyright{
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 600;
   text-align: center;
   opacity: .1;
@@ -153,7 +153,7 @@
   .no-result {
     font-size: 18px;
     line-height: 2;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     color:  #512d41;
   }
   .display-suggestions{
@@ -192,7 +192,7 @@
       font-size: 1.7rem;
     }
     input{
-      min-width: 18rem;
+      min-width: 16rem;
     }
     .notFoundMessage{
       font-size: 1rem;
