@@ -56,7 +56,7 @@ function getData(wordTyped) {
       showLoadingSpinner.style.display = "none";
       let notFound = document.createElement("h4");
       notFound.className = "notFoundMessage";
-      notFound.innerHTML = `Sorry,There is No Match Found Similar to <span style="color:#0a6b65be;">${wordTyped}</span>.<br>I Have Found Similar Results . Checked Them Out !!`;
+      notFound.innerHTML = `Sorry,There is No Match Found Similar to <span style="color:#0a6b65be;">${wordTyped}</span>.<br>I Have Found Some Results Similar To The Word You Typed.Please Have a Look !`;
       noResultFound.appendChild(notFound);
       parsedData.forEach((suggestions) => {
         let newSpan = document.createElement("span");
