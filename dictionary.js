@@ -73,7 +73,6 @@ function getData(wordTyped) {
     if (audio) {
       giveSound(audio);
     }
-    console.log(parsedData);
   };
   //send the request to the server
   xhr.send();
