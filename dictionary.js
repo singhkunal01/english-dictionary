@@ -15,11 +15,14 @@ let showLoadingSpinner = document.querySelector(".spinnerLoading");
 //output section
 let outputSection = document.querySelector(".output");
 //event listeners after clicking on resultBtn
-resultBtn.addEventListener("keyup", (e)=>{
-  if(e.key=="Enter" && inputData.value!="")
-    giveResultsOfWord();
-});
+
 resultBtn.addEventListener("click", giveResultsOfWord);
+resultBtn.addEventListener("keyup", (e)=>{
+  if(e.key=="Enter" && inputData.value!=""){
+    giveResultsOfWord(e);
+  }
+});
+//added the functionality of hitting enter to search
 function giveResultsOfWord(e) {
 
   //after searching for once it shows the previous searched values so first clear them everytime
