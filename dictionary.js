@@ -15,7 +15,10 @@ let showLoadingSpinner = document.querySelector(".spinnerLoading");
 //output section
 let outputSection = document.querySelector(".output");
 //event listeners after clicking on resultBtn
-resultBtn.addEventListener("keyup", giveResultsOfWord);
+resultBtn.addEventListener("keyup", (e)=>{
+  if(e.key=="Enter" && inputData.value!="")
+    giveResultsOfWord();
+});
 resultBtn.addEventListener("click", giveResultsOfWord);
 function giveResultsOfWord(e) {
 
