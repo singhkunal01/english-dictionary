@@ -15,8 +15,10 @@ let showLoadingSpinner = document.querySelector(".spinnerLoading");
 //output section
 let outputSection = document.querySelector(".output");
 //event listeners after clicking on resultBtn
+resultBtn.addEventListener("keyup", giveResultsOfWord);
 resultBtn.addEventListener("click", giveResultsOfWord);
 function giveResultsOfWord(e) {
+
   //after searching for once it shows the previous searched values so first clear them everytime
   outputData.innerText = "";
   prenounciationArea.innerHTML = "";
