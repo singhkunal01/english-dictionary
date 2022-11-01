@@ -14,9 +14,17 @@ const ourAPIkey = "b806881b-0e5f-4e8e-ad96-462d96ef4fc0";
 let showLoadingSpinner = document.querySelector(".spinnerLoading");
 //output section
 let outputSection = document.querySelector(".output");
-//event listeners after clicking on resultBtn
 
+//event listeners after clicking on resultBtn
+//when user clicks on search button
 resultBtn.addEventListener("click", giveResultsOfWord);
+//when user hits enter
+inputData.addEventListener("keypress", (e)=>{
+  if(e.key==="Enter"){
+    giveResultsOfWord(e);
+  }
+});
+
 resultBtn.addEventListener("keyup", (e)=>{
   if(e.key=="Enter" && inputData.value!=""){
     giveResultsOfWord(e);
